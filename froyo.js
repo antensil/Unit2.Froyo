@@ -1,7 +1,6 @@
 document.getElementById('flavorForm').addEventListener('submit', function(event) {
   event.preventDefault();
 
-
   const input = document.getElementById('flavors').value;
   const flavors = input.split(',');
 
@@ -9,9 +8,8 @@ document.getElementById('flavorForm').addEventListener('submit', function(event)
   const flavorCounts = {};
 
   // Loop through array of flavors 
-  flavors.forEach(flavor => {~
-      flavor = flavor.trim();
-      
+  flavors.forEach(flavor => {
+      flavor = flavor.trim();     
       if (flavorCounts[flavor]) {
           flavorCounts[flavor]++;
       } else {
